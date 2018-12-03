@@ -1075,6 +1075,10 @@ Prefab:
       propertyPath: m_Text
       value: CREDITS
       objectReference: {fileID: 0}
+    - target: {fileID: 1049668433527090, guid: a31c8ef6e780050448352dd36aec5ec5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a31c8ef6e780050448352dd36aec5ec5, type: 2}
   m_IsPrefabParent: 0
