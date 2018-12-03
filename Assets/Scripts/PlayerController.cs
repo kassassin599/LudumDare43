@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     float speed = 6f;
 
-	void Start () {
+    static int score = 0;
+
+    void Start () {
         transform.GetComponent<PlayerController>().enabled = true;
+        score++;
     }
 	
 	void Update () {

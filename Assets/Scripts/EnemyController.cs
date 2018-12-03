@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour {
     GameObject player;
 
     void Start () {
-        origin = new Vector2(-8.5f, 1.13f);
+        origin = new Vector2(-8.5f, 3f);
     }
 	
 	void Update () {
@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour {
     {
         if (collision.collider.CompareTag("Player"))
         {
+            Score.scoreValue++;
             collision.collider.GetComponent<PlayerController>().enabled = false;
             collision.collider.tag = "Default";
             Instantiate(player, origin, Quaternion.identity);

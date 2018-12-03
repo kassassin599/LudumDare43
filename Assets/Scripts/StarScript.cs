@@ -9,6 +9,11 @@ public class StarScript : MonoBehaviour {
         if (collision.collider.CompareTag("Player")|| collision.collider.CompareTag("Default"))
         {
             print("LEVEL COMPLETE");
+            PassedMenu.passed = true;
+        }
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            FailedMenu.failed = true;
         }
     }
 }
