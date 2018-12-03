@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     [SerializeField]
-    float speed = 10f;
+    float speed = 6f;
 
 	void Start () {
         transform.GetComponent<PlayerController>().enabled = true;

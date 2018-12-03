@@ -22,7 +22,13 @@ public class EnemyController : MonoBehaviour {
         if (collision.collider.CompareTag("Player"))
         {
             collision.collider.GetComponent<PlayerController>().enabled = false;
+            collision.collider.tag = "Default";
             Instantiate(player, origin, Quaternion.identity);
+            Instantiate(gameObject, Vector2.zero, Quaternion.identity);
+        }
+        if (collision.collider.CompareTag("Default"))
+        {
+            return;
         }
     }
 }
